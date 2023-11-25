@@ -7,6 +7,7 @@ import spacy
 nltk.download('punkt')
 
 # Load spaCy model for entity recognition
+spacy.download('en_core_web_sm')
 nlp = spacy.load("en_core_web_sm")
 
 def generate_ngrams(text, n):
