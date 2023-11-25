@@ -13,7 +13,7 @@ def generate_ngrams(text, n):
 
 # Streamlit web application
 def main():
-    st.title("N-gram and Entity Recognition App")
+    st.title("Quiz 1 N-gram generator App")
 
     # Input text
     input_text = st.text_area("Enter your text:")
