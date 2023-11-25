@@ -26,3 +26,4 @@ def main():
             st.write(f"{n_value}-grams:", ngrams_result)
         else:
             st.warning("Please enter some text.")
+main()
