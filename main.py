@@ -19,8 +19,8 @@ def main():
     input_text = st.text_area("Enter your text:")
 
     # N-gram generation
-    n_value = st.slider("Select the 'n' value for N-grams:", min_value=1, max_value=5)
-    if st.button("Generate N-grams"):
+    n_value = st.slider("Select the value for n: ", min_value=1, max_value=5)
+    if st.button(f"Generate {n_value}-grams"):
         if input_text:
             ngrams_result = generate_ngrams(input_text, n_value)
             st.write(f"{n_value}-grams:", ngrams_result)
